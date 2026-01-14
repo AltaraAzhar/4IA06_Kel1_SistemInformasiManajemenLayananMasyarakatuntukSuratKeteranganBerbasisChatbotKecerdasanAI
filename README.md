@@ -1,59 +1,52 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# SMARTServicePM: Sistem Informasi Manajemen Layanan Masyarakat untuk Surat Keterangan Berbasis Chatbot Kecerdasaran Artifisial
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+SMARTServicePM adalah sistem informasi manajemen layanan masyarakat yang dirancang untuk mempermudah proses pengajuan dan pengelolaan surat keterangan di tingkat kelurahan. Sistem ini dilengkapi dengan chatbot berbasis kecerdasan artifisial yang membantu masyarakat dalam memberikan informasi layanan, panduan persyaratan, serta menjawab pertanyaan secara otomatis. Melalui sistem ini, kita dapat meningkatkan efisiensi pelayanan administrasi, mempercepat proses pengajuan surat, dan memberikan pengalaman layanan publik yang lebih responsif dan modern.
 
-## About Laravel
+# Pembagian Peran Tim
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+1. Project Manager (PM) -- Raihan Azmi Syauqi Putra
+Bertanggung jawab mengelola perencanaan proyek, mengatur pembagian tugas, memantau progres pengerjaan, serta memastikan pengembangan sistem berjalan sesuai jadwal. Adapun dokumen yang disusun dalam peran ini meliputi:
+    * Berita Acara Pertemuan
+    * Project Plan
+    * Project Management Plan (PMP)
+    * Gantt Chart
+    * NDA
+  
+2. System Analyst (SA) -- Risna Dwi Indriani
+Bertanggung jawab menganalisis kebutuhan sistem serta merancang spesifikasi fungsional dan non-fungsional sebagai dasar pengembangan aplikasi. Adapun dokumen yang disusun dalam peran ini meliputi:
+    * FUNCTIONAL SPECIFICATION DOCUMENT
+    * BUSINESS REQUIREMENT DOCUMENT
+    * MANUAL BOOK
+    * Use Case Diagram
+    * Activity Diagram
+    * Entity Relationship Diagram (ERD)
+  
+3. UI/UX Designer --Risna Dwi Indriani
+Bertanggung jawab merancang tampilan antarmuka dan pengalaman pengguna agar sistem mudah digunakan dan menarik secara visual. Perancangan dilakukan dengan memperhatikan kebutuhan pengguna serta alur interaksi sistem. Adapun dokumen dan output yang dihasilkan meliputi:
+    * User Flow Diagram
+    * Desain visual UI final
+    * Prototype interaktif tampilan sistem
+    * Panduan desain (design guideline)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+4. Programmer -- Altara Azhar Kalif
+Bertanggung jawab mengimplementasikan hasil perancangan sistem ke dalam bentuk aplikasi, mencakup pengembangan frontend, backend, serta integrasi basis data. Programmer juga melakukan pengujian untuk memastikan seluruh fungsi sistem berjalan sesuai spesifikasi kebutuhan. Adapun output dan dokumen yang dihasilkan meliputi:
+    * Implementasi antarmuka pengguna (User Interface)
+    * Implementasi proses bisnis dan logika sistem
+    * Integrasi database dengan aplikasi
+    * Source code program
+    * Konfigurasi framework dan library pendukung
+    * Laporan hasil pengujian fungsional (testing report)
+    * Deployment aplikasi
+  
+5. AI Engineer -- Altara Azhar Kalif
+Bertanggung jawab merancang, membangun, dan mengintegrasikan modul chatbot berbasis kecerdasan artifisial ke dalam sistem. Proses ini mencakup penyusunan alur percakapan, pelatihan model, serta evaluasi performa chatbot. Adapun dokumen dan output yang dihasilkan meliputi:
+    * Dataset pertanyaan dan jawaban
+    * Implementasi model chatbot
+    * Integrasi chatbot ke dalam sistem
+    * Dokumentasi teknis modul AI
+  
+6. Technical Writer (TW) -- Enna Simulung Sumule
+Bertanggung jawab menyusun dokumentasi sistem sebagai pendukung proses pengembangan dan penggunaan aplikasi. Dokumentasi ini bertujuan untuk memudahkan pengguna serta pihak pengembang dalam memahami cara kerja sistem. Adapun dokumen yang dihasilkan meliputi:
+    * Project Charter
+    * Laporan Akhir
+    * Laporan Antara
