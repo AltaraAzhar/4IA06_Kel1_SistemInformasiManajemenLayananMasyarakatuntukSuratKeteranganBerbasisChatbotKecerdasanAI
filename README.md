@@ -34,6 +34,7 @@ Bertanggung jawab merancang tampilan antarmuka dan pengalaman pengguna agar sist
 * Desain visual UI final
 * Prototype interaktif tampilan sistem
 * Panduan desain (design guideline)
+* Tautan berikut berisi desain antarmuka final sistem yang dibuat menggunakan Figma sebagai referensi implementasi UI:https://www.figma.com/make/kL9zMKc10DKfSEnOOnf1IJ/Web-UI-Design--Copy-?node-id=0-1&t=o0AVpJ0bLMz7crC9-1
 
 4. Programmer -- Altara Azhar Kalif
 
