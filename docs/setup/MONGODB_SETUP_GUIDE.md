@@ -15,7 +15,7 @@ Tambahkan konfigurasi berikut di file `.env`:
 ```env
 # MongoDB Atlas Connection
 DB_CONNECTION=mongodb
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/kelurahan_pabuaran_mekar?retryWrites=true&w=majority
+MONGO_URI=MONGO_URI=mongodb+srv://<USERNAME>:<PASSWORD>@<CLUSTER_URL>/<DB_NAME>?retryWrites=true&w=majority
 DB_DATABASE=kelurahan_pabuaran_mekar
 ```
 
