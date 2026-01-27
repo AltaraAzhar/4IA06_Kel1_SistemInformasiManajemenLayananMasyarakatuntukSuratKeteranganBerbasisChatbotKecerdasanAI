@@ -77,7 +77,7 @@ return [
         |--------------------------------------------------------------------------
         |
         | Konfigurasi untuk MongoDB Atlas menggunakan DSN connection string.
-        | Format DSN: mongodb+srv://username:password@cluster.mongodb.net/database?retryWrites=true&w=majority
+        | Format DSN: MONGO_URI=mongodb+srv://<USERNAME>:<PASSWORD>@<CLUSTER_URL>/<DB_NAME>?retryWrites=true&w=majority
         |
         | Alternatif: Jika tidak menggunakan DSN, bisa menggunakan host, port, username, password
         |
