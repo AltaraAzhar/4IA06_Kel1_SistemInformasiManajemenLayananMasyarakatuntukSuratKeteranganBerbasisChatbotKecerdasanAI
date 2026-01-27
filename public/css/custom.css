@@ -1,17 +1,23 @@
 /* Custom Styles for Kelurahan Pabuaran Mekar Website */
 
-/* Navbar Color Variables - Default: White */
+/* Color Variables - DOMINAN BIRU */
 :root {
     --navbar-bg: #ffffff;
     --navbar-text: #1f2937;
     --navbar-text-secondary: #6b7280;
     --navbar-border: #e5e7eb;
-    --navbar-hover-text: #f59e0b;
+    --navbar-hover-text: #2563eb;
     --navbar-hover-bg: #f3f4f6;
     --navbar-mobile-bg: #ffffff;
     --navbar-mobile-hover-bg: #f3f4f6;
     --navbar-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
         0 1px 2px 0 rgba(0, 0, 0, 0.06);
+
+    /* Primary Colors - BIRU */
+    --primary: #2563eb;
+    --primary-dark: #1e40af;
+    --primary-light: #3b82f6;
+    --accent: #fbbf24; /* Kuning sebagai accent */
 }
 
 html {
@@ -22,13 +28,24 @@ body {
     padding-top: 80px; /* Space for fixed navbar */
 }
 
+/* Hero Background */
+.hero-bg {
+    background-image: url("/images/KelurahanPaburanMekar.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
 /* Hero Section Overlay */
 .hero-overlay {
-    background: linear-gradient(
-        135deg,
-        rgba(30, 41, 59, 0.85) 0%,
-        rgba(15, 23, 42, 0.9) 100%
-    );
+    background: rgba(
+        0,
+        0,
+        0,
+        0.45
+    ); /* cukup gelap tapi gambar tetap terlihat */
+    backdrop-filter: none;
 }
 
 /* Logo Shield Shape */
@@ -42,27 +59,27 @@ body {
 }
 
 /* .logo-shield::after {
-    content: "";
-    position: absolute;
-    bottom: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 24px solid transparent;
-    border-right: 24px solid transparent;
-    border-top: 12px solid #FFC107;
-}
+        content: "";
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 24px solid transparent;
+        border-right: 24px solid transparent;
+        border-top: 12px solid #FFC107;
+    }
 
-.logo-shield-inner {
-    width: 32px;
-    height: 32px;
-    background: #4CAF50;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+    .logo-shield-inner {
+        width: 32px;
+        height: 32px;
+        background: #4CAF50;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
 
 /* Card Styles */
 .service-card {
@@ -74,27 +91,27 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Button Styles */
+/* Button Styles - DOMINAN BIRU */
 .btn-primary {
-    background: linear-gradient(135deg, #ffc107 0%, #f4b400 100%);
+    background: linear-gradient(135deg, #E9A500 0%, #E9A500 100%);
     transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, #f4b400 0%, #ffc107 100%);
+    background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
 }
 
 .btn-outline {
-    border: 2px solid #ffc107;
-    color: #ffc107;
+    border: 2px solid #ffffff;
+    color: #ffffff;
     transition: all 0.3s ease;
 }
 
 .btn-outline:hover {
-    background: #ffc107;
-    color: #0f172a;
+    background: #2563eb;
+    color: #ffffff;
     transform: translateY(-2px);
 }
 
@@ -110,18 +127,7 @@ body {
     padding: 80px 0;
 }
 
-/* Hero Background */
-.hero-bg {
-    background: linear-gradient(
-            135deg,
-            rgba(15, 23, 42, 0.95) 0%,
-            rgba(30, 41, 59, 0.9) 100%
-        ),
-        url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
+/* Hero Background - Removed gradient to allow background image to show */
 
 /* Accordion Styles */
 .accordion-item {
@@ -136,15 +142,15 @@ body {
     background-color: #f9fafb;
 }
 
-/* Input Styles */
+/* Input Styles - DOMINAN BIRU */
 .form-input {
     border: 2px solid #e5e7eb;
     transition: all 0.3s ease;
 }
 
 .form-input:focus {
-    border-color: #ffc107;
-    box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.1);
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
     outline: none;
 }
 
@@ -200,7 +206,7 @@ body {
     animation: fadeInUp 0.6s ease-out;
 }
 
-/* Scrollbar Styling */
+/* Scrollbar Styling - DOMINAN BIRU */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -210,12 +216,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #ffc107;
+    background: #2563eb;
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #f4b400;
+    background: #1e40af;
 }
 
 /* Navbar Styles using CSS Variables */

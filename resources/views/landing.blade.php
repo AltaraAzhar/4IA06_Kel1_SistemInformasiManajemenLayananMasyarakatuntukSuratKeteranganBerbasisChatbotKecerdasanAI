@@ -31,12 +31,12 @@
                 
                 <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row gap-4 mb-12">
-                    <a href="{{ route('pengajuan') }}" 
+                    <a href="{{ route('user.pengajuan') }}" 
                        class="btn-primary px-6 py-3 rounded-lg text-white font-semibold flex items-center justify-center space-x-2">
                         <i class="fas fa-file-alt"></i>
                         <span>Mulai Pengajuan</span>
                     </a>
-                    <a href="{{ route('status') }}" 
+                    <a href="{{ route('user.surat.status') }}" 
                        class="btn-outline px-6 py-3 rounded-lg font-semibold flex items-center justify-center space-x-2">
                         <i class="fas fa-search"></i>
                         <span>Cek Status Surat</span>
@@ -46,7 +46,7 @@
                 <!-- Stats -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div class="stat-card rounded-lg p-4 text-center">
-                        <div class="text-3xl font-bold text-yellow-400 mb-1">12</div>
+                        <div class="text-3xl font-bold text-yellow-400 mb-1">5</div>
                         <div class="text-gray-200 text-sm">Jenis Layanan</div>
                     </div>
                     <div class="stat-card rounded-lg p-4 text-center">
@@ -78,18 +78,11 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 @php
                     $layanan = [
-                        ['icon' => 'users', 'name' => 'Kartu Keluarga', 'desc' => 'Pengurusan Kartu Keluarga baru, pindah, hilang, atau perubahan data'],
                         ['icon' => 'baby', 'name' => 'Surat Keterangan Kelahiran', 'desc' => 'Surat pengantar untuk pengurusan Akta Kelahiran'],
-                        ['icon' => 'file-invoice-dollar', 'name' => 'Surat Keterangan Tidak Mampu', 'desc' => 'Surat keterangan tidak mampu untuk pengurusan biaya pendidikan, kesehatan'],
-                        ['icon' => 'heart', 'name' => 'Surat Pengantar Nikah', 'desc' => 'Surat pengantar untuk pendaftaran pernikahan ke KUA'],
-                        ['icon' => 'sign-out-alt', 'name' => 'Pindah Keluar', 'desc' => 'Surat pengantar untuk pindah keluar dari wilayah Kelurahan'],
-                        ['icon' => 'sign-in-alt', 'name' => 'Pindah Datang', 'desc' => 'Surat pengantar untuk pindah datang ke wilayah Kelurahan'],
-                        ['icon' => 'monument', 'name' => 'Surat Keterangan Kematian', 'desc' => 'Surat pengantar untuk pengurusan akta kematian'],
-                        ['icon' => 'file-contract', 'name' => 'Surat Pernyataan Waris', 'desc' => 'Surat pernyataan ahli waris untuk keperluan administrasi warisan'],
+                        ['icon' => 'dove', 'name' => 'Surat Keterangan Kematian', 'desc' => 'Surat pengantar untuk pengurusan Akta Kematian'],
                         ['icon' => 'store', 'name' => 'Surat Keterangan Usaha', 'desc' => 'Surat keterangan untuk usaha mikro dan kecil'],
-                        ['icon' => 'building', 'name' => 'Surat Keterangan Domisili Usaha', 'desc' => 'Surat keterangan domisili lokasi usaha/perusahaan'],
-                        ['icon' => 'home', 'name' => 'Pengantar PBB', 'desc' => 'Surat pengantar untuk pengurusan pajak bumi dan bangunan'],
-                        ['icon' => 'tree', 'name' => 'Riwayat Tanah / Tidak Sengketa', 'desc' => 'Surat keterangan riwayat kepemilikan tanah dan tidak ada sengketa'],
+                        ['icon' => 'credit-card', 'name' => 'Surat Keterangan Tidak Mampu', 'desc' => 'Surat keterangan tidak mampu untuk keringanan biaya pendidikan, kesehatan, dll'],
+                        ['icon' => 'home', 'name' => 'Surat Pengantar PBB', 'desc' => 'Surat pengantar untuk pengurusan pajak bumi dan bangunan'],
                     ];
                 @endphp
 
@@ -106,13 +99,6 @@
                     </div>
                 </div>
                 @endforeach
-            </div>
-
-            <div class="text-center mt-12">
-                <a href="{{ route('layanan') }}" 
-                   class="inline-block px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold rounded-lg transition-colors">
-                    Lihat Detail Layanan
-                </a>
             </div>
         </div>
     </section>

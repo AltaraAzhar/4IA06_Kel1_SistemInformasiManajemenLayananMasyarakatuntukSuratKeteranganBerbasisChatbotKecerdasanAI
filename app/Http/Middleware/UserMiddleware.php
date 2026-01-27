@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
 
 class UserMiddleware
@@ -15,12 +16,19 @@ class UserMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (!auth()->check()) {
-            return redirect()->route('login')->with('error', 'Silakan login terlebih dahulu.');
+        if (!Auth::check()) {
+            return redirect()->route('user.login')->with('error', 'Silakan login terlebih dahulu.');
         }
 
-        if (auth()->user()->role !== 'user') {
-            return redirect()->route('admin.dashboard')->with('error', 'Akses ditolak. Hanya user yang dapat mengakses halaman ini.');
+        $user = Auth::user();
+        $userRole = $user->role ?? 'user';
+
+        // STRICT: Hanya user dengan role='user' yang boleh akses route user
+        // Admin TIDAK BOLEH akses route user (harus logout dulu atau pakai browser berbeda)
+        if ($userRole !== 'user') {
+            // Jika admin mencoba akses route user, block dengan 403
+            // Admin harus akses via /admin/*, bukan /user/*
+            abort(403, 'Akses ditolak. Admin harus mengakses dashboard admin di /admin/dashboard');
         }
 
         return $next($request);

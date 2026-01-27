@@ -45,6 +45,9 @@
     
     @include('components.footer')
     
+    <!-- Chatbot Widget -->
+    @include('chatbot.widget')
+    
     <!-- Mobile Menu Script -->
     <script>
         const btn = document.getElementById("mobile-menu-button");
